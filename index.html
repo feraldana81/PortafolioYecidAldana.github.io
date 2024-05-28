@@ -6,12 +6,14 @@
     <meta name="description" content="landing page para mi portafolio profesional">
     <meta name="author" content="YecidAldana">
     <title>Yecid Fernando Aldana | Portafolio</title>
-    <!-- font icons -->
+    <!-- Referencia a los estilos themify para agregar iconos al proyecto -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
+    <!-- Referencia al archivo de clases CSS para los estilos -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="inicio">
+	<!-- Dentro del body agrego una cabecera con la clase header del archivo CSS, esta clase carga una imagen jpeg -->
+	<!-- Se crean unos iconos de tipo lista con un hipervinculo a mis redes sociales -->
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
@@ -27,6 +29,8 @@
             </div>
         </div>
     </header>
+	<!-- Se crea un elemento nav el cual proporciona una lista de elementos de navegación dentro del mismo documento -->
+	<!-- Cada elemento tiene un hipervinculo a un marcador de esta misma página -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
@@ -41,6 +45,7 @@
                         <a href="#experiencia" class="nav-link">Experiencia</a>
                     </li>
                 </ul>
+				<!-- Este elemento carga la imagen de perfil -->
                 <ul class="navbar-nav brand">
                     <img src="assets/imgs/Logo.jpg" alt="" class="brand-img">
                     <li class="brand-txt">
@@ -59,8 +64,11 @@
             </div>
         </div>
     </nav>
+	<!-- Contenedor para agrupar tres paneles sobre el perfil profesional, información personal y habilidades blandas -->
     <div class="container-fluid">
+		<!-- Este elemento div sobreMi es llamado desde el menú de navegación inicial -->
         <div id="sobreMi" class="row about-section">
+			<!-- Contenedor Perfil Profesional -->
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Perfil profesional</h3>
                 <span class="line mb-5"></span>
@@ -68,6 +76,7 @@
 				<p class="mt-20" align=justify>Desarrollador backend especializado en manejo de bases de datos relacionales, servicios API Rest, servidores web, redes y telefonía, así como la implementación de arquitecturas de software.</p>
 				<p class="mt-20" align=justify>Soy honesto, responsable y dedicado con mi trabajo, siempre dando lo mejor de mí en cada proyecto y tarea, dispuesto a aprender nuevas tecnologías y aportar mis conocimientos en pro de los objetivos globales de mi empresa y equipo de trabajo.</p>
             </div>
+			<!-- Contenedor Información personal -->
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Información personal</h3>
                 <span class="line mb-5"></span>
@@ -85,6 +94,8 @@
 					<li class="social-item"><a class="social-link" href="https://www.instagram.com/feraldana81?igsh=MWJoMzNvYWRlMjBkMA=="><i class="ti-instagram" aria-hidden="true"></i></a></li>
                 </ul>  
             </div>
+			<!-- Contenedor Habilidades blandas -->
+			<!-- Invoca iconos de la clase CSS themify para agregar un icono check a cada registro -->
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Habilidades blandas</h3>
                 <span class="line mb-5"></span>
@@ -141,14 +152,15 @@
         </div>
     </div>
 
-    <!--Resume Section-->
+    <!--Sección Experiencia-->
     <section class="section" id="experiencia">
         <div class="container">
             <h2 class="mb-5">Experiencia</h2>
             <div class="row">
+				<!-- Contenedor para el panel de experiencia laboral -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
-                       <div class="card-header">
+						<div class="card-header">
 							<div class="card-header has-icon">
 								<i class="ti-desktop text-danger" aria-hidden="true"></i>
 							</div>
@@ -172,6 +184,7 @@
                         </div>
                     </div>
                 </div>
+				<!-- Contenedor para el panel de Estudios -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
                        <div class="card-header">
@@ -201,6 +214,7 @@
                         </div>
                     </div>
                 </div>
+				<!-- Contenedor para el panel de Manejo de herramientas e Idiomas -->
                 <div class="col-lg-4">
                     <div class="card">
                        <div class="card-header">
@@ -272,7 +286,7 @@
             </div>
         </div>
     </section>
-
+	<!-- Sección de proyectos destacados -->
     <section class="section" id="proyectos">
         <div class="container">
             <h2 class="mb-5 pb-4">Proyectos destacados</h2>
@@ -352,13 +366,13 @@
             </div>
         </div>
     </section>
-
+	<!-- Contenedor para un panel llamativo que resalta el mensaje -->
     <section class="section bg-dark py-5">
         <div class="container text-center">
             <h2 class="text-light mb-1 font-weight-normal">Disponible como FreeLance</h2>
         </div>
     </section>
-
+	<!-- Contenedor para dos paneles de envío mensaje y contactame -->
     <div class="section contact" id="contacto">
         <div id="map" class="map"></div>
         <div class="container">
@@ -413,6 +427,7 @@
 
         </div>
     </div>
+	<!-- Elemento de pie de página -->
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
@@ -421,18 +436,9 @@
         </div>
     </footer>
 
-	<!-- core  -->
+	<!-- Referencia al javascript jquery que se utiliza en las clases de CSS -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    
-    <!-- JohnDoe js -->
-    <script src="assets/js/johndoe.js"></script>
 
 </body>
 </html>
